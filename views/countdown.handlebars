@@ -1,0 +1,39 @@
+<head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="/js/countdown.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/countdown.css">
+    </link>
+</head>
+<body>
+    <div class="site-wrapper">
+            <img src="/images/home.png" width="50" height="50" class="d-inline-block align-top margin"
+                alt="Home" onclick="javascript:window.location.href='/'">
+        <div class="top">
+            <div class="page-header">
+                <h1>{{title}} <small>{{description}}</small></h1>
+            </div>
+        </div>
+        <hr />
+        <div id="clockdiv">
+            <div><span class="days"></span>
+                <div class="smalltext">Days</div>
+            </div>
+            <div><span class="hours"></span>
+                <div class="smalltext">Hours</div>
+            </div>
+            <div><span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div><span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script id="start">
+        run_clock('clockdiv', {{date}});
+        document.querySelector('body').style.background = "{{color}}";
+    </script>
+</body>

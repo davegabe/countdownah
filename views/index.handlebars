@@ -1,0 +1,39 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/it.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+    <link rel="stylesheet" href="/css/index.css">
+    </link>
+    <script src="/js/index.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <h1>Create Countdown</h1>
+        <form action="/" class="formCountdown" method="POST">
+            <label for="title">Title</label>
+            <input id="title" type="text" class="form-control" name="title" required/>
+
+            <label for="description">Description</label>
+            <input id="description" type="text" class="form-control" name="description" required/>
+
+            <label for="background">Background</label>
+            <input id="color" name="color" type="color" class="form-control" value="#00ECB9" required/>
+
+            <label for="data">Date:</label>
+            <div class='input-group date' id='datetimepicker4'>
+                <input id='date' name="date" type='text' class="form-control" required/>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                </span>
+            </div>
+
+            <input type="submit" class="btn btn-light" value="Submit" />
+        </form>
+    </div>
+</body>
