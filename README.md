@@ -1,7 +1,7 @@
 # # Countdownah ```1.0```
 *Custom countdown website*
 
-BETA:       https://the-countdown-app.herokuapp.com/
+BETA:       https://countdownah.herokuapp.com/
 RELEASE:    https://cowntdownah.davegabe.it/
 
 ## Features
