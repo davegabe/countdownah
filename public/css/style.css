@@ -1,0 +1,35 @@
+html,
+body{
+  height: 100%;
+}
+
+.fullscreen {
+  min-height: 100%;
+  display: flex !important;
+}
+
+.is-completely-center {
+	margin: auto;
+	padding: 10px;
+}
+
+.title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.datetimepicker-dummy .datetimepicker-dummy-wrapper .datetimepicker-dummy-input {
+	max-width: 80% !important;
+}
+
+.mainBox {
+	min-width: 80%;
+}
+
+.clockBlock {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}

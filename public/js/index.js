@@ -1,20 +1,16 @@
-var unAvailableDates = [],
-    available = function (date) {
-        var dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
-        if ($.inArray(dmy, unAvailableDates) != -1) {
-            return [false, "", "unAvailable"];
-        }
-        return [true, "", "Available"];
-    };
-$(function () {
-    $('#datetimepicker4').datetimepicker({
-        locale: 'it',
-        format: 'DD/MM/YYYY',
-        minDate: 'now',
-        disabledDates: [],
-        widgetPositioning: {
-            horizontal: "auto",
-            vertical: "top"
-        }
-    });
+// Initialize all input of type date
+var calendars = bulmaCalendar.attach('[type="date"]', {
+  color: "dark",
+  type: "date",
+  lang: "en",
+  displayMode: "dialog",
+  showHeader: false,
+  showFooter: false,
+  dateFormat: "MM/DD/YYYY",
+  showButtons: false,
+  weekStart: 1,
+  minDate: new Date(),
 });
+
+// Loop on each calendar initialized
+$(".datetimepicker-clear-button").remove();

@@ -1,0 +1,38 @@
+<link rel='stylesheet' href='/bulma/bulma-calendar.min.css' />
+
+<body>
+    <div class="section fullscreen has-background-dark is-bold has-text-black">
+        <div class="section is-completely-center">
+            <div class="box">
+                <form action="/" class="formCountdown" method="POST">
+                    <center>
+                        <h1 class="title">Countdownah</h1>
+                        <h2 class="subtitle">Create your countdown</h2>
+                        <input id="title" type="text" class="input has-text-centered" name="title" placeholder="Title"
+                            required />
+                        </br>
+                        <input id="description" type="text" class="input has-text-centered" name="description"
+                            placeholder="Description" />
+                        <input type="date" name="date" id="date" required />
+                        </br>
+                        </br>
+                        <div class="control has-text-centered">
+                            <input type="submit" class="button is-dark" value="Submit" />
+                        </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+
+        <nav class="navbar is-light is-fixed-bottom">
+            <div class="content is-completely-center">
+                <p class="has-text-centered">
+                    <strong>Countdownah</strong> by <a href="http://davegabe.it">DaveGabe</a>.
+                    Source code available on <a href="http://github.com/davegabe/countdownah">Github</a>
+                </p>
+            </div>
+        </nav>
+    </div>
+</body>
+<script src="/bulma/bulma-calendar.min.js"></script>
+<script src="/js/index.js"></script>
