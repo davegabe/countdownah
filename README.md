@@ -26,7 +26,7 @@ RELEASE:    https://cowntdownah.davegabe.it/
 
 ## Setup (with docker)
 
-- Pull using docker ```docker pull davegabe/playlistah```
+- Pull using docker ```docker pull davegabe/countdownah```
 - Create a mongodb
 - Prepare the following variables for the next step:
     - DB_HOST= url db    (ex. *address*:*port*/*database*)
